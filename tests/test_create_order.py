@@ -1,9 +1,11 @@
 import pytest
 import sender_stand_request
 import data
+import allure
 
 class TestCreateOrder:
 
+    @allure.title("Создание заказа с различными цветами")
     @pytest.mark.parametrize("color", [
         ["BLACK"], 
         ["GREY"], 

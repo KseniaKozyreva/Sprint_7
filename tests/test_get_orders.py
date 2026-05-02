@@ -1,7 +1,9 @@
 import sender_stand_request   
+import allure
 
 class TestGetOrders:
      #  Возвращается список заказов
+    @allure.title("возврвщается список заказов")
     def test_get_orders_list_returns_list(self):
         response = sender_stand_request.get_orders_list()
     
